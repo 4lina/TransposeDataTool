@@ -1,0 +1,16 @@
+﻿<Window x:Class="TransposeDataTool.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TransposeDataTool"
+        mc:Ignorable="d"
+        Title="TransposeDataTool" Height="200" Width="300"
+        DataContext="{StaticResource MainWindowViewModel}">
+    <Window.Resources />
+    
+    <Grid>
+        <Button Content="Transpose Data"  Command="{Binding OpenFileButton}" HorizontalAlignment="Center" Margin="95,100,98.333,0" VerticalAlignment="Top" Width="100"/>
+        <Image Margin="22,22,21.333,99.667" Source="tecan_logo.png" Stretch="Fill"/>
+    </Grid>
+</Window>
